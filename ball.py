@@ -35,8 +35,8 @@ class Ball():
         """ Sets the color of the ball to a random shade of blue
         """
         r = 0
-        g = 0
-        b = random.random()
+        g = .8
+        b = 0
         myColor = (r,g,b)
         self.bTurtle.color(myColor)
 
@@ -88,16 +88,10 @@ class WarpBall(Ball):
             self.y = 0
 
 # ----------- 💻 PART 1️⃣: WRITE YOUR CODE HERE ⬇️ -----------
-    def setColor(self):
-        """Right now this method calls its parent class's setColor method.
-        Can you change it so that the WarpBalls
-        are a different color than the regular ones?
-        """
-        r = random.random()
-        g = 0
-        b = 0
-        myColor = (r,g,b)
-        self.bTurtle.color(myColor)
+  
+
+
+
 
 class BreathingBall(Ball):
     """ BreathingBall extends the Ball class.
@@ -120,13 +114,4 @@ class BreathingBall(Ball):
         self.setSize(newRadius)
 
 # ----------- 💻 PART 2️⃣: WRITE THE CODE HERE ⬇️ -----------
-    def setColor(self):
-        """Right now this method calls its parent class's setColor method.
-        Can you change it so that the BreathingBalls
-        are a different color than the regular ones?
-        """
-        r = random.random()
-        g = random.random()
-        b = random.random()
-        myColor = (r,g,b)
-        self.bTurtle.color(myColor)
+ 
