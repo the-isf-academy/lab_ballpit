@@ -25,10 +25,12 @@ class Ball():
         self.bTurtle.shape("circle")
         self.setColor()
         self.setSize(self.size)
+
     def setPos(self, x, y):
         """ Moves the ball to a new location
         """
         self.bTurtle.goto(x,y)
+
     def setColor(self):
         """ Sets the color of the ball to a random shade of blue
         """
@@ -37,6 +39,7 @@ class Ball():
         b = random.random()
         myColor = (r,g,b)
         self.bTurtle.color(myColor)
+
     def setSize(self,size):
         """Changes size of ball
 
@@ -55,6 +58,7 @@ class Ball():
             self.xVel = self.xVel*-1
         if self.y < 0 or self.y > 1:
             self.yVel = self.yVel*-1
+
     def move(self):
         """Moves the ball slightly along its current path
         """
@@ -72,6 +76,7 @@ class WarpBall(Ball):
     """
     def __init__(self):
         super().__init__()
+
     def update(self):
         """Checks whether the ball has hit a wall.
         If the ball has hit a wall, it "warps" the ball
@@ -88,7 +93,11 @@ class WarpBall(Ball):
         Can you change it so that the WarpBalls
         are a different color than the regular ones?
         """
-        super().setColor()
+        r = random.random()
+        g = 0
+        b = 0
+        myColor = (r,g,b)
+        self.bTurtle.color(myColor)
 
 class BreathingBall(Ball):
     """ BreathingBall extends the Ball class.
@@ -101,6 +110,7 @@ class BreathingBall(Ball):
         """
         super().__init__()
         self.step = random.randint(0,120)
+        
     def update(self):
         """Calls the parent method and also changes the size of the ball
         """
@@ -108,10 +118,15 @@ class BreathingBall(Ball):
         self.step += 1
         newRadius = math.sin(self.step/20)*(3/2)+1.5
         self.setSize(newRadius)
+
 # ----------- 💻 PART 2️⃣: WRITE THE CODE HERE ⬇️ -----------
     def setColor(self):
         """Right now this method calls its parent class's setColor method.
         Can you change it so that the BreathingBalls
         are a different color than the regular ones?
         """
-        super().setColor()
+        r = random.random()
+        g = random.random()
+        b = random.random()
+        myColor = (r,g,b)
+        self.bTurtle.color(myColor)
