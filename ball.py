@@ -34,9 +34,9 @@ class Ball():
     def setColor(self):
         """ Sets the color of the ball to a random shade of blue
         """
-        r = 0
-        g = 0
-        b = random.random()
+        r = .1
+        g = random.uniform(.2,.9)
+        b = .3
         myColor = (r,g,b)
         self.bTurtle.color(myColor)
 
@@ -93,9 +93,9 @@ class WarpBall(Ball):
         Can you change it so that the WarpBalls
         are a different color than the regular ones?
         """
-        r = random.random()
-        g = 0
-        b = 0
+        r = random.uniform(.2,.9)
+        g = .2
+        b = .4
         myColor = (r,g,b)
         self.bTurtle.color(myColor)
 

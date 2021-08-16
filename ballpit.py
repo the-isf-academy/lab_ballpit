@@ -11,7 +11,6 @@ def ball_pit():
     turtle.tracer(50)
     turtleWorld.hideturtle()
 
-    # ballList = [Ball(),BreathingBall(),WarpBall()]
     ballList = []
 
     for i in range(10):
@@ -20,10 +19,10 @@ def ball_pit():
         ballList.append(WarpBall())
     
     while True:
-        for b in ballList:
-            b.update()
-            b.move()
-            b.setColor()
+        for i in range(len(ballList)-1):
+            ballList[i].update()
+            ballList[i].move()
+            ballList[i].setColor()
 
 
 if __name__ == "__main__":
