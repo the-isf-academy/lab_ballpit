@@ -2,7 +2,6 @@
 # ball.py
 # by Britte Genzlinger
 ####################################
-import sys
 import random
 import turtle
 import math
@@ -32,7 +31,7 @@ class Ball():
         self.bTurtle.goto(x,y)
 
     def setColor(self):
-        """ Sets the color of the ball to a random shade of blue
+        """ Sets the color of the ball to a random shade of green.
         """
         r = 0
         g = .8

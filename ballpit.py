@@ -13,7 +13,7 @@ def ball_pit():
     turtle.tracer(50)
     turtleWorld.hideturtle()
 
-    ballList = [Ball(),BreathingBall(),WarpBall()]
+    ballList = [Ball(),WarpBall(),BreathingBall()]
     
     while True:
         for b in ballList:
