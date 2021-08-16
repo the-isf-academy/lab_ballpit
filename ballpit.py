@@ -16,9 +16,9 @@ def ball_pit():
     ballList = [Ball(),WarpBall(),BreathingBall()]
     
     while True:
-        for b in ballList:
-            b.update()
-            b.move()
+        for i in range(len(ballList)):
+            ballList[i].update()
+            ballList[i].move()
 
 
 if __name__ == "__main__":
