@@ -1,18 +1,15 @@
 ##########################################
 # ballpit.py
-# by Britte Genzlinger
-###########################################
-import turtle
+# Teachers: Emma Brown and Britte Genzlinger
+# Student: YOUR NAME GOES HERE
+############################################
+
+from setup_ballpit_canvas import setup_ballpit_canvas
 from ball import *
 
 def ball_pit():
     """ Initializes the ball pit with each type of ball.
     """
-    turtleWorld = turtle.Turtle()
-    turtle.setworldcoordinates(0, 0, 1, 1)
-    turtle.tracer(50)
-    turtleWorld.hideturtle()
-
     ballList = [Ball(),WarpBall(),BreathingBall()]
     
     while True:
@@ -22,4 +19,8 @@ def ball_pit():
 
 
 if __name__ == "__main__":
+    setup_ballpit_canvas()
     ball_pit()
+
+
+

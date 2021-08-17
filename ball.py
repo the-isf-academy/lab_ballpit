@@ -1,6 +1,7 @@
 #####################################
 # ball.py
-# by Britte Genzlinger
+# Teachers: Emma Brown and Britte Genzlinger
+# Student: YOUR NAME GOES HERE
 ####################################
 import random
 import turtle
@@ -22,15 +23,15 @@ class Ball():
         self.size = random.random()*2
         self.bTurtle = turtle.Turtle()
         self.bTurtle.shape("circle")
-        self.setColor()
-        self.setSize(self.size)
+        self.set_color()
+        self.set_size(self.size)
 
-    def setPos(self, x, y):
+    def set_position(self, x, y):
         """ Moves the ball to a new location
         """
         self.bTurtle.goto(x,y)
 
-    def setColor(self):
+    def set_color(self):
         """ Sets the color of the ball to a random shade of green.
         """
         r = 0
@@ -39,7 +40,7 @@ class Ball():
         myColor = (r,g,b)
         self.bTurtle.color(myColor)
 
-    def setSize(self,size):
+    def set_size(self,size):
         """Changes size of ball
 
         Arg:
@@ -64,7 +65,7 @@ class Ball():
         self.bTurtle.up()
         self.x += self.xVel
         self.y += self.yVel
-        self.setPos(self.x,self.y)
+        self.set_position(self.x,self.y)
 
 
 class WarpBall(Ball):
@@ -109,8 +110,8 @@ class BreathingBall(Ball):
         """
         super().update()
         self.step += 1
-        newRadius = math.sin(self.step/20)*(3/2)+1.5
-        self.setSize(newRadius)
+        new_radius = math.sin(self.step/20)*(3/2)+1.5
+        self.set_size(new_radius)
 
 # ----------- 💻 PART 2️⃣: WRITE THE CODE HERE ⬇️ -----------
- 
+  
