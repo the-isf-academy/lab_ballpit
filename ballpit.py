@@ -1,26 +1,27 @@
-##########################################
 # ballpit.py
-# Teachers: Emma Brown and Britte Genzlinger
-# Student: YOUR NAME GOES HERE
-############################################
 
 from setup_ballpit_canvas import setup_ballpit_canvas
-from ball import *
+from ball import Ball, BreathingBall
 
 def ball_pit():
     """ Initializes the ball pit with each type of ball.
     """
-    ballList = [Ball(),WarpBall(),BreathingBall()]
+
+    ballList = []
+    for i in range(10):
+        ballList.append(Ball())
+        ballList.append(BreathingBall())
+
     
     while True:
-        for i in range(len(ballList)):
-            ballList[i].update()
-            ballList[i].move()
+        for ball in ballList:
+            ball.update()
+            ball.move()
 
 
-if __name__ == "__main__":
-    setup_ballpit_canvas()
-    ball_pit()
+
+setup_ballpit_canvas()
+ball_pit()
 
 
 
