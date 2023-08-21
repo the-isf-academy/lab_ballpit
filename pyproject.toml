@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "lab-ballpit"
+name = "lab_ballpit"
 version = "0.1.0"
 description = ""
 authors = ["emma <eqbrown@isf.edu.hk>"]

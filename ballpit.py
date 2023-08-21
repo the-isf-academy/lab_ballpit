@@ -1,16 +1,14 @@
 # ballpit.py
 
 from setup_ballpit_canvas import setup_ballpit_canvas
-from ball import Ball, BreathingBall
+from ball import Ball
 
 def ball_pit():
-    """ Initializes the ball pit with each type of ball.
-    """
+    """ Initializes the ball pit"""
 
     ballList = []
-    for i in range(10):
+    for i in range(3):
         ballList.append(Ball())
-        ballList.append(BreathingBall())
 
     
     while True:

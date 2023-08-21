@@ -7,7 +7,7 @@ import turtle
 import math
 
 class Ball():
-    """ A colored circle of random size and random shade of blue
+    """ A colored circle of random size and random shade of green
     that moves in a random direction and random speed around the screen.
     When it encounters the edge of the screen,
     it "bounces" off.
@@ -34,14 +34,13 @@ class Ball():
     def set_position(self, x, y):
         """ Moves the ball to a new location
         """
+
         self.turtle.goto(x,y)
 
     def set_size(self,size):
         """Changes size of ball
-
-        Arg:
-        size: floating point number to determine the size of the ball
         """
+
         self.turtle.resizemode("user")
         self.turtle.turtlesize(size)
 
@@ -50,6 +49,7 @@ class Ball():
         If the ball has hit a wall, it changes the direction of movement
         to immitate a "bounce"
         """
+
         if self.x < 0 or self.x > 1:
             self.xVel = self.xVel*-1
         if self.y < 0 or self.y > 1:
@@ -58,6 +58,7 @@ class Ball():
     def move(self):
         """Moves the ball slightly along its current path
         """
+
         self.turtle.up()
         self.x += self.xVel
         self.y += self.yVel
@@ -66,6 +67,7 @@ class Ball():
     def set_color(self):
         """ Sets the color of the ball to a shade of green.
         """
+
         r = 0
         g = .8
         b = 0
