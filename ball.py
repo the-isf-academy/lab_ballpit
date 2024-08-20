@@ -1,5 +1,5 @@
 import random
-import turtle
+from turtle import *
 
 class Ball():
     """ A colored circle of random size and random shade of green
@@ -19,7 +19,7 @@ class Ball():
         
         self.size = random.randint(1,10)
 
-        self.turtle = turtle.Turtle()
+        self.turtle = Turtle()
         self.turtle.shape("circle")
 
         self.set_color()

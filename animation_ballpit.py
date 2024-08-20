@@ -1,9 +1,10 @@
-import turtle
+from turtle import *
 from ball import Ball
 
-## sets up the Turtle for animation. 
-turtle.setworldcoordinates(0, 0, 1, 1)
-turtle.tracer(30)
+## sets up the Turtle canvas
+setworldcoordinates(0, 0, 1, 1)
+tracer(30)
+bgcolor((1,1,1))
 
 
 ## creates multiples instances of Ball() 
