@@ -3,11 +3,10 @@ import math
 from turtle import *
 
 class Ball():
-    """ A colored circle of random size and random shade of green
-    that moves in a random direction and random speed around the screen.
-    When it encounters the edge of the screen,
-    it "bounces" off.
-    """
+    # A colored circle of random size and random shade of green
+    # that moves in a random direction and random speed around the screen.
+    # When it encounters the edge of the screen,
+    # it "bounces" off.
 
     def __init__(self):
         # Creates a Ball object using Turtle
@@ -63,8 +62,8 @@ class Ball():
         g = .8
         b = 0
 
-        myColor = (r,g,b)
-        self.turtle.color(myColor)
+        my_color = (r,g,b)
+        self.turtle.color(my_color)
 
 
 # ----------- 💻 PASTE CODE HERE ⬇️ -----------

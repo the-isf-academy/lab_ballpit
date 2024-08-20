@@ -8,14 +8,14 @@ bgcolor((1,1,1))
 
 
 ## creates multiples instances of Ball() 
-ballList = []
+ball_list = []
 for i in range(3):
-    ballList.append(Ball())
+    ball_list.append(Ball())
 
 
 ## animates the ballpit 
 while True:
-    for ball in ballList:
+    for ball in ball_list:
         ball.update()
         ball.move()
 
